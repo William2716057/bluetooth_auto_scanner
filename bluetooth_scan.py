@@ -5,8 +5,8 @@ from datetime import datetime
 from pathlib import Path
 
 
-SCAN_DURATION = 30.0
-INTERVAL = 600  # change here
+SCAN_DURATION = 60.0
+INTERVAL = 660  # change here
 
 
 def filename():
