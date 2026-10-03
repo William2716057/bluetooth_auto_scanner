@@ -6,9 +6,10 @@ from pathlib import Path
 
 
 SCAN_DURATION = 60.0
-INTERVAL = 660  # change here
+INTERVAL = 660  # edit here
 
-
+#filename as user input
+#filename = input("Enter file name: ")
 def filename():
     now = datetime.now()
     date = now.strftime("%d%m%Y")
@@ -127,7 +128,7 @@ async def main():
         except Exception as e:
             print(f"Scan error: {e}")
 
-        print("\nWaiting 10 minutes...")
+        print("\nWaiting 10 minutes...") #x minutes to next scan
 
         await asyncio.sleep(INTERVAL)
 
